@@ -28,7 +28,7 @@ The general syntax of the command is as follows.
 
 When the rainfall option is chosen, the command generates the following variable for each season:
 
-- Mean Daily Rainfall           `mean_season_`year’`
+- Mean Daily Rainfall           `mean_season_'year'`
 - Median Daily Rainfall
 - Variance of Daily Rainfall
 - Skew of Daily Rainfall
@@ -60,4 +60,4 @@ When the temperature option is chosen, the command generates the following varia
 
 Growing degree days are calculated using the options growbase_low(number) and growbase_high(number) to determine the number of days where the temperature was between that range. As with the rainfall option, the temperature option also generates deviations in GDD from the long-term average and the deviation measured as a z-score.
 
-Following Schlenker/Roberts, the command also calculates temperature bins as the percentage of days that fall in each temperature quintile during the season. It then generates the variables tempbin`quintile’`year'.
+Following Schlenker/Roberts, the command also calculates temperature bins as the percentage of days that fall in each temperature quintile during the season. It then generates the variables `tempbin'quintile''year'`.
