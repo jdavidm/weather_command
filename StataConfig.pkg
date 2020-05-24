@@ -1,0 +1,10 @@
+v 0.1
+d
+d 'StataConfig': some basic ado files
+d
+d Distribution-Date: 20200523
+d
+d Author: Jeffrey D. Michler
+d Support: jdmichler@arizona.edu
+d
+f weather.ado
