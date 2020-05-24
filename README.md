@@ -12,7 +12,7 @@ The command can be used with either rainfall or temperature data from any source
 
 An example of how the data set should be set-up is below.
 
-![Alt](/dailyrain.png "Daily Rainfall")
+![Alt](dailyrain.png "Daily Rainfall")
 
 ## Command: set up
 
