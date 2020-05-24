@@ -10,10 +10,6 @@ The command can be used with either rainfall or temperature data from any source
 2. The data is measured daily.
 3. The variable names for each column contain yyyymmdd. The variable names can have any prefix but must contain the year, month, and day.
 
-An example of how the data set should be set-up is below.
-
-![Alt](dailyrain.png "Daily Rainfall")
-
 ## Command: set up
 
 Using data sets as defined above, the weather command creates useful statistics in the same fashion for all years. The command together with an example do file is in the zipped folder weather_command. Place the file weather.ado into wherever Stata stores your .ado files. The file weather_wrapper.do provides an example of the syntax and how to run the command.
