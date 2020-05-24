@@ -6,9 +6,9 @@ The following package processes remote sensing rainfall and temperature data and
 
 The command can be used with either rainfall or temperature data from any source. The only requirements are that:
 
--The data is “wide,” meaning each location is a row and each column is rainfall or temperature reading from a different day.
--The data is measured daily.
--The variable names for each column contain yyyymmdd. The variable names can have any prefix but must contain the year, month, and day.
+1. The data is “wide,” meaning each location is a row and each column is rainfall or temperature reading from a different day.
+2. The data is measured daily.
+3. The variable names for each column contain yyyymmdd. The variable names can have any prefix but must contain the year, month, and day.
 
 ## Command: set up
 
