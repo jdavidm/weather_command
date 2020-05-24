@@ -28,7 +28,7 @@ The general syntax of the command is as follows.
 
 When the rainfall option is chosen, the command generates the following variable for each season:
 
-- Mean Daily Rainfall
+- Mean Daily Rainfall           `mean_season_`year’`
 - Median Daily Rainfall
 - Variance of Daily Rainfall
 - Skew of Daily Rainfall
