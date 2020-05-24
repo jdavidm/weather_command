@@ -29,19 +29,19 @@ The general syntax of the command is as follows.
 When the rainfall option is chosen, the command generates the following variable for each season:
 
 - Mean Daily Rainfall           `mean_season_'year'`
-- Median Daily Rainfall
-- Variance of Daily Rainfall
-- Skew of Daily Rainfall
-- Total Rainfall
-- Deviation in Total Rainfall
-- Z-Score of Total Rainfall
-- Rainy Days
-- Deviation in Rainy Days
-- No Rain Days
-- Deviation in No Rain Days
-- % Rainy Days
-- Deviation in % Rainy Days
-- Longest Dry Spell
+- Median Daily Rainfall         `median_season_'year'`
+- Variance of Daily Rainfall    `sd_season_'year'`
+- Skew of Daily Rainfall        `total_season_'year'`
+- Total Rainfall                `skew_season_'year'`
+- Deviation in Total Rainfall   `dev_total_season_'year'`
+- Z-Score of Total Rainfall     `z_total_season_'year'`
+- Rainy Days                    `raindays_'year'`
+- Deviation in Rainy Days       `dev_raindays_'year'`
+- No Rain Days                  `norain_'year'`
+- Deviation in No Rain Days     `dev_norain_'year'`
+- % Rainy Days                  `percent_raindays_'year'`
+- Deviation in % Rainy Days     `dev_percent_raindays_'year'`
+- Longest Dry Spell             `dry_'year'`
 
 In addition to these basic statistics, the command also calculates the long-term averages for total_season, norain, raindays, and raindays_percent. It then uses these to generate variables that measure each seasons deviation from the long-term average and the deviation measured as a z-score.
 
@@ -49,14 +49,14 @@ In addition to these basic statistics, the command also calculates the long-term
 
 When the temperature option is chosen, the command generates the following variable for each season:
 
-- Mean Daily Temperature
-- Median Daily Temperature
-- Variance of Daily Temperature
-- Skew of Daily Temperature
-- Growing Degree Days (GDD)
-- Deviation in GDD
-- Z-Score of GDD
-- Maximum Daily Temperature
+- Mean Daily Temperature         `mean_season_'year'`
+- Median Daily Temperature       `median_season_'year'`
+- Variance of Daily Temperature  `sd_season_'year'`
+- Skew of Daily Temperature      `skew_season_'year'`
+- Growing Degree Days (GDD)      `gdd_'year'`
+- Deviation in GDD               `dev_gdd_'year'`
+- Z-Score of GDD                 `z_gdd_'year'`
+- Maximum Daily Temperature      `max_season_'year'`
 
 Growing degree days are calculated using the options growbase_low(number) and growbase_high(number) to determine the number of days where the temperature was between that range. As with the rainfall option, the temperature option also generates deviations in GDD from the long-term average and the deviation measured as a z-score.
 
