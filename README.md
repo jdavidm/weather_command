@@ -16,5 +16,11 @@ Using data sets as defined above, the weather command creates useful statistics 
 
 The general syntax of the command is as follows.
 
+- After the command name, one has to define what variables contain the rain/temperature information. I provide examples for CHIRPS and ECMWF. For the CHIRPS datasets, the prefix on the weather variables is pic_ while in the case of ECMWF the prefix is y_.
+- Next, one needs to tell the command whether the data is rain_data or temperature_data.
+- One then has to select a season to study using the options ini_month(number), fin_month(number) and day_month(number), if not specified, the default is the first day of the month. For example, in the example .do file I chose a season from the middle of March to the middle of June. At this moment, we must be careful with seasons that contain months that contain two different years, such as November to February. In this case some renaming of the variables is necessary. (Sorry about that…)
+- The option keep tells the command to keep the variables it creates plus some of the original variables in order to match them with other datasets.
+- The save of option tells the program to save the dataset in a given location with a given name.
+
 ## Command: Results
 
