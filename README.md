@@ -24,3 +24,40 @@ The general syntax of the command is as follows.
 
 ## Command: Results
 
+1. **Rainfall variables**
+
+When the rainfall option is chosen, the command generates the following variable for each season:
+
+- Mean Daily Rainfall
+- Median Daily Rainfall
+- Variance of Daily Rainfall
+- Skew of Daily Rainfall
+- Total Rainfall
+- Deviation in Total Rainfall
+- Z-Score of Total Rainfall
+- Rainy Days
+- Deviation in Rainy Days
+- No Rain Days
+- Deviation in No Rain Days
+- % Rainy Days
+- Deviation in % Rainy Days
+- Longest Dry Spell
+
+In addition to these basic statistics, the command also calculates the long-term averages for total_season, norain, raindays, and raindays_percent. It then uses these to generate variables that measure each seasons deviation from the long-term average and the deviation measured as a z-score.
+
+2. **Temperatire variables**
+
+When the temperature option is chosen, the command generates the following variable for each season:
+
+- Mean Daily Temperature
+- Median Daily Temperature
+- Variance of Daily Temperature
+- Skew of Daily Temperature
+- Growing Degree Days (GDD)
+- Deviation in GDD
+- Z-Score of GDD
+- Maximum Daily Temperature
+
+Growing degree days are calculated using the options growbase_low(number) and growbase_high(number) to determine the number of days where the temperature was between that range. As with the rainfall option, the temperature option also generates deviations in GDD from the long-term average and the deviation measured as a z-score.
+
+Following Schlenker/Roberts, the command also calculates temperature bins as the percentage of days that fall in each temperature quintile during the season. It then generates the variables tempbin`quintile’`year'.
