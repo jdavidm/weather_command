@@ -228,8 +228,8 @@ forvalues j = 1983(1)2017 {
 						label var  tempbin60`j'  "The number of days in the  60th percentile of temperature in year `j'"
 						label var  tempbin80`j'  "The number of days in the  80th percentile of temperature in year `j'"
 						label var  tempbin100`j' "The number of days in the  100th percentile of temperature in year `j'"
-						
-						qui: drop aux_to100 aux20* aux40*  aux60* aux80* aux100*
+
+						qui: drop aux20* aux40*  aux60* aux80* aux100*
 
 					}
 
