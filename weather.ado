@@ -90,7 +90,7 @@ loc safe2 = 1
 
 * Help identify the first year that is used, so I can create a local with that name
 loc count = 0
-forvalues j = 1979(1)2017 {
+forvalues j = 1979(1)2027 {
 
 
 	* Tempname for the matrix
@@ -309,7 +309,7 @@ foreach var of loc deviation {
 
 
 	* Z-scores - keep this
-	forvalues j = 1979(1)2017{
+	forvalues j = 1979(1)2027{
 
 		* We only start until the variables start existing
 		qui: cap confirm numeric variable `var'_`j'
@@ -344,7 +344,7 @@ if "`temperature_data'" == "temperature_data" {
 
 
 	* Z-scores - keep this
-	forvalues j = 1979(1)2017{
+	forvalues j = 1979(1)2027{
 
 	* We only start until the variables start existing
 		qui: cap confirm numeric variable gdd_`j'
