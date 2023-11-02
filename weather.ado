@@ -1,12 +1,13 @@
 *********************************************************************************
-* 	weather                                                   			       	 	  *
+* 	weather                                                   			       	 	    *
 *	v 1.0  17may2017	by	Oscar Barriga Cabanillas	- obarriga@ucdavis.edu		    *
 *	v 2.0  16mjul2017	by	Oscar Barriga Cabanillas	- obarriga@ucdavis.edu		    *
-*			New stuff done by Aleksandr Michuda 		- amichuda@ucdavis.edu		    		*
+*			New stuff done by Aleksandr Michuda 		- amichuda@ucdavis.edu		    *
 *	v 3.0  2july2019	by  Jeffrey D. Michler			- jdmichler@email.arizona.edu   *
-* v 3.1  5july2019  by  Brian McGreal				- bmcgreal@email.arizona.edu    		*
-* v 3.2  8july2019  by  Anna Josepshon				- aljosephson@email.arizona.edu 	*
-*	v 3.3  24apr2020	by  Jeffrey D. Michler			- jdmichler@arizona.edu					*
+*   v 3.1  5july2019  	by  Brian McGreal				- bmcgreal@email.arizona.edu    *
+*   v 3.2  8july2019  	by  Anna Josepshon				- aljosephson@arizona.edu 		*
+*	v 3.3  24apr2020	by  Jeffrey D. Michler			- jdmichler@arizona.edu			*
+*	v 3.3  2nov2023		by  Jeffrey D. Michler			- jdmichler@arizona.edu			*
 *********************************************************************************
 
 
@@ -89,7 +90,7 @@ loc safe2 = 1
 
 * Help identify the first year that is used, so I can create a local with that name
 loc count = 0
-forvalues j = 1983(1)2017 {
+forvalues j = 1979(1)2017 {
 
 
 	* Tempname for the matrix
@@ -308,7 +309,7 @@ foreach var of loc deviation {
 
 
 	* Z-scores - keep this
-	forvalues j = 1983(1)2017{
+	forvalues j = 1979(1)2017{
 
 		* We only start until the variables start existing
 		qui: cap confirm numeric variable `var'_`j'
@@ -343,7 +344,7 @@ if "`temperature_data'" == "temperature_data" {
 
 
 	* Z-scores - keep this
-	forvalues j = 1983(1)2017{
+	forvalues j = 1979(1)2017{
 
 	* We only start until the variables start existing
 		qui: cap confirm numeric variable gdd_`j'
